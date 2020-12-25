@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+body {
+  font-family: 'Raleway', sans-serif; }
+
+header {
+  text-align: center;
+  position: fixed;
+  height: 73px;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: white; }
+  header img {
+    width: 220px;
+    margin-top: 10px; }
+
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap; }
+
+.flex-container > * {
+  -webkit-flex: 1 100%;
+  flex: 1 100%; }
+
+.vto-target {
+  background-color: #f1f1f1;
+  padding: 30px 10px 10px 10px;
+  margin-top: 83px; }
+  .vto-target #content {
+    text-align: center;
+    width: 480px;
+    height: 360px;
+    background-color: black;
+    margin: 0 auto;
+    position: relative; }
+    .vto-target #content #webcam {
+      display: none; }
+    .vto-target #content #canvas {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 0; }
+    .vto-target #content #canvas3d {
+      position: absolute;
+      left: 0;
+      top: 0;
+      /* overlay the 2d canvas */
+      z-index: 1; }
+    .vto-target #content #flashVideo {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 2; }
+
+.aside {
+  background-color: #f1f1f1;
+  padding: 0px 10px 30px 10px; }
+  .aside label {
+    font-weight: normal;
+    margin: 15px 0px 0px 0px; }
+  .aside #src-opt {
+    margin-top: 5px; }
+  .aside hr {
+    border-color: #ddd; }
+  .aside #stop {
+    margin-right: 10px;
+    width: 85px; }
+  .aside input[type=file] {
+    display: none; }
+  .aside input[type=range] {
+    -webkit-appearance: none;
+    display: inline; }
+  .aside input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 2px;
+    background: #ddd;
+    border: none;
+    cursor: pointer; }
+  .aside input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: #6C6C6C;
+    margin-top: -4px;
+    cursor: pointer; }
+  .aside input[type=range]:focus {
+    outline: none; }
+  .aside input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc; }
+
+@media all and (min-width: 768px) {
+  .vto-target {
+    padding: 30px 10px 30px 10px;
+    -webkit-flex: 1;
+    -webkit-order: 1;
+    order: 1; }
+    .vto-target #content {
+      float: right; }
+
+  .aside {
+    padding: 20px 10px 20px 10px;
+    margin-top: 83px;
+    -webkit-flex: 1;
+    -webkit-order: 2;
+    order: 2; }
+
+  .glasses-menu {
+    order: 3; }
+
+  footer {
+    -webkit-order: 3;
+    order: 4; } }
+footer {
+  padding: 20px 0px;
+  text-align: center; }
+
+.carousel-control.left, .carousel-control.right {
+  background-image: none; }
+
+#glasses-selection {
+  width: 100%;
+  margin: 0 auto; }
+  #glasses-selection .carousel-control {
+    width: 5%;
+    color: #333;
+    text-shadow: none;
+    transition: all 0.5s ease 0s; }
+  #glasses-selection .carousel-inner {
+    width: 90%;
+    margin: 0 auto; }
+  #glasses-selection .item div {
+    padding: 0px;
+    text-align: center; }
+  #glasses-selection img {
+    padding: 20px;
+    width: 100%;
+    border-bottom: 2px solid white; }
+  #glasses-selection img:hover {
+    cursor: pointer; }
+  #glasses-selection img:hover, #glasses-selection img.active {
+    border-bottom: 2px solid #ddd; }
+
+/*# sourceMappingURL=html5.css.map */

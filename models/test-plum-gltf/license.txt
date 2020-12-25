@@ -1,0 +1,11 @@
+Model Information:
+* title:	Test-plum-gltf
+* source:	https://sketchfab.com/3d-models/test-plum-gltf-650ef72519f3409989e863df82848b05
+* author:	yoann-baunach (https://sketchfab.com/yoann-baunach)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Test-plum-gltf" (https://sketchfab.com/3d-models/test-plum-gltf-650ef72519f3409989e863df82848b05) by yoann-baunach (https://sketchfab.com/yoann-baunach) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,32 @@
+[
+    {
+        "ref_number":"A09",
+        "size":"135",
+        "isOpticalLens": false,
+        "images":{
+            "frame":"1-15.png",
+            "lenses":"1-18.png",
+            "lleg":"1-17.png",
+            "rleg":"1-16.png",
+            "shadow":"1-19.png",
+            "preview":"1-15.png"
+        },
+        "settings":{
+            "transparency":"1",
+            "shadow":"1",
+            "temples":"8",
+            "scale":"1"
+        },
+        "validate":true,
+        "envMap_id":"be530f5f-49ae-4862-8fde-9d7279921652",
+        "_id":"6fa9c829-fa34-4c14-a6fc-8093191ed009"
+    }
+]
+
+
+
+
+
+
+
+

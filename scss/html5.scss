@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+$canvas_width: 480px;
+$canvas_height: 360px;
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+header{
+	text-align: center;
+	position: fixed;
+    height: 73px;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: white;
+
+	img{
+		width: 220px;
+		margin-top: 10px;
+	}
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+.flex-container > * {
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.vto-target{
+	background-color: rgb(241, 241, 241);
+	padding: 30px 10px 10px 10px;
+	margin-top: 83px;
+
+	#content{
+		text-align: center;
+		width: $canvas_width; 
+		height: $canvas_height;
+		background-color: black;
+		margin: 0 auto;
+		position: relative;
+
+		#webcam {
+			display: none;
+		}
+
+		#canvas {
+		    position: absolute;
+		    left: 0;
+		    top: 0;
+		    z-index: 0;
+		}
+
+		#canvas3d {
+		    position: absolute;
+		    left: 0;
+		    top: 0;    /* overlay the 2d canvas */
+		    z-index: 1;
+		}
+
+		#flashVideo {
+		    position: absolute;
+		    left: 0;
+		    top: 0;
+		    z-index: 2;
+		}
+	}
+}
+
+
+
+.aside{
+	background-color: rgb(241, 241, 241);
+	padding: 0px 10px 30px 10px;
+
+	label {
+		font-weight: normal;
+		margin: 15px 0px 0px 0px;
+	}
+
+	#src-opt {
+		margin-top: 5px;
+	}
+
+	hr {
+		border-color: #ddd;
+	}
+
+	#stop {
+		margin-right: 10px;
+		width: 85px;
+	}
+
+	input[type=file]{
+		display: none;
+	}
+
+	input[type=range]{
+	    -webkit-appearance: none;
+	    display: inline;
+	}
+
+	input[type=range]::-webkit-slider-runnable-track {
+	    width: 300px;
+	    height: 2px;
+	    background: #ddd;
+	    border: none;
+	    cursor: pointer;
+	}
+
+	input[type=range]::-webkit-slider-thumb {
+	    -webkit-appearance: none;
+	    border: none;
+	    height: 10px;
+	    width: 10px;
+	    border-radius: 50%;
+	    background: #6C6C6C;
+	    margin-top: -4px;
+	    cursor: pointer;
+	}
+
+	input[type=range]:focus {
+	    outline: none;
+	}
+
+	input[type=range]:focus::-webkit-slider-runnable-track {
+	    background: #ccc;
+	}	
+}
+
+@media all and (min-width: 768px) {
+    .vto-target{
+    	padding: 30px 10px 30px 10px;
+    	-webkit-flex: 1;
+    	-webkit-order:1;
+    	order:1;
+
+    	#content{
+    		float: right;
+    	}
+    }
+    .aside{
+    	padding: 20px 10px 20px 10px;
+    	margin-top: 83px;
+	    -webkit-flex: 1;
+	    -webkit-order: 2;
+	    order:2;
+    }
+    .glasses-menu{
+    	order: 3;
+    }
+    footer{
+	    -webkit-order:3;
+	    order:4;
+    }
+}
+
+footer{
+	padding: 20px 0px;
+	text-align: center;
+}
+
+
+.carousel-control.left,.carousel-control.right {
+	background-image:none;
+}
+
+#glasses-selection{
+
+	width: 100%;
+    margin: 0 auto;
+
+	.carousel-control {
+		width: 5%;
+		color: #333;
+		text-shadow: none;
+		transition: all 0.5s ease 0s;
+	}
+
+	.carousel-inner {
+		width: 90%;
+		margin: 0 auto; 
+	}
+
+	.item div {
+		padding: 0px;
+		text-align: center;
+	}
+
+	img {
+	    padding: 20px;
+	    width: 100%;
+	    border-bottom: 2px solid white;
+	}
+
+	img:hover {
+		cursor: pointer;
+	}
+
+	img:hover, img.active {
+	    border-bottom: 2px solid #ddd;
+	}
+}

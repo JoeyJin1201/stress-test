@@ -1,0 +1,610 @@
+[
+    
+    {
+        "ref_number":"A01",
+        "size":"135",
+        "isOpticalLens": false,
+        "images":{
+            "frame":"1-35.png",
+            "lenses":"1-38.png",
+            "lleg":"1-37.png",
+            "rleg":"1-36.png",
+            "shadow":"1-39.png",
+            "preview":"1-35.png"
+        },
+        "settings":{
+            "transparency":"1",
+            "shadow":"1",
+            "temples":"-5.5",
+            "scale":"1"
+        },
+        "validate":true,
+        "envMap_id":"be530f5f-49ae-4862-8fde-9d7279921652",
+        "_id":"6fa9c829-fa34-4c14-a6fc-8093191ed001"
+    },
+    
+    {
+        "ref_number":"A02",
+        "size":"135",
+        "isOpticalLens": false,
+        "images":{
+            "frame":"1-01.png",
+            "lenses":"1-04.png",
+            "lleg":"1-03.png",
+            "rleg":"1-02.png",
+            "shadow":"1-05.png",
+            "preview":"1-01.png"
+        },
+        "settings":{
+            "transparency":"1",
+            "shadow":"1",
+            "temples":"-5.5",
+            "scale":"1"
+        },
+        "validate":true,
+        "envMap_id":"be530f5f-49ae-4862-8fde-9d7279921652",
+        "_id":"6fa9c829-fa34-4c14-a6fc-8093191ed002"
+    },
+    
+    {
+        "ref_number":"A03",
+        "size":"135",
+        "isOpticalLens": false,
+        "images":{
+            "frame":"1-20.png",
+            "lenses":"1-23.png",
+            "lleg":"1-22.png",
+            "rleg":"1-21.png",
+            "shadow":"1-24.png",
+            "preview":"1-20.png"
+        },
+        "settings":{
+            "transparency":"1",
+            "shadow":"1",
+            "temples":"-5.5",
+            "scale":"1"
+        },
+        "validate":true,
+        "envMap_id":"be530f5f-49ae-4862-8fde-9d7279921652",
+        "_id":"6fa9c829-fa34-4c14-a6fc-8093191ed003"
+    },
+    
+    {
+        "ref_number":"A04",
+        "size":"135",
+        "isOpticalLens": false,
+        "images":{
+            "frame":"1-116.png",
+            "lenses":"1-119.png",
+            "lleg":"1-118.png",
+            "rleg":"1-117.png",
+            "shadow":"1-120.png",
+            "preview":"1-116.png"
+        },
+        "settings":{
+            "transparency":"1",
+            "shadow":"1",
+            "temples":"-5.5",
+            "scale":"1"
+        },
+        "validate":true,
+        "envMap_id":"be530f5f-49ae-4862-8fde-9d7279921652",
+        "_id":"6fa9c829-fa34-4c14-a6fc-8093191ed004"
+    },
+    
+    {
+        "ref_number":"A05",
+        "size":"135",
+        "isOpticalLens": false,
+        "images":{
+            "frame":"1-111.png",
+            "lenses":"1-114.png",
+            "lleg":"1-113.png",
+            "rleg":"1-112.png",
+            "shadow":"1-115.png",
+            "preview":"1-111.png"
+        },
+        "settings":{
+            "transparency":"1",
+            "shadow":"1",
+            "temples":"-5.5",
+            "scale":"1"
+        },
+        "validate":true,
+        "envMap_id":"be530f5f-49ae-4862-8fde-9d7279921652",
+        "_id":"6fa9c829-fa34-4c14-a6fc-8093191ed005"
+    },
+    
+    {
+        "ref_number":"A06",
+        "size":"135",
+        "isOpticalLens": false,
+        "images":{
+            "frame":"1-65.png",
+            "lenses":"1-68.png",
+            "lleg":"1-67.png",
+            "rleg":"1-66.png",
+            "shadow":"1-69.png",
+            "preview":"1-65.png"
+        },
+        "settings":{
+            "transparency":"1",
+            "shadow":"1",
+            "temples":"-5.5",
+            "scale":"1"
+        },
+        "validate":true,
+        "envMap_id":"be530f5f-49ae-4862-8fde-9d7279921652",
+        "_id":"6fa9c829-fa34-4c14-a6fc-8093191ed006"
+    },
+    
+    {
+        "ref_number":"A07",
+        "size":"135",
+        "isOpticalLens": false,
+        "images":{
+            "frame":"1-106.png",
+            "lenses":"1-109.png",
+            "lleg":"1-108.png",
+            "rleg":"1-107.png",
+            "shadow":"1-110.png",
+            "preview":"1-106.png"
+        },
+        "settings":{
+            "transparency":"1",
+            "shadow":"1",
+            "temples":"-5.5",
+            "scale":"1"
+        },
+        "validate":true,
+        "envMap_id":"be530f5f-49ae-4862-8fde-9d7279921652",
+        "_id":"6fa9c829-fa34-4c14-a6fc-8093191ed006"
+    },
+    
+    {
+        "ref_number":"A08",
+        "size":"135",
+        "isOpticalLens": false,
+        "images":{
+            "frame":"1-90.png",
+            "lenses":"1-93.png",
+            "lleg":"1-92.png",
+            "rleg":"1-91.png",
+            "shadow":"1-94.png",
+            "preview":"1-90.png"
+        },
+        "settings":{
+            "transparency":"1",
+            "shadow":"1",
+            "temples":"-5.5",
+            "scale":"1"
+        },
+        "validate":true,
+        "envMap_id":"be530f5f-49ae-4862-8fde-9d7279921652",
+        "_id":"6fa9c829-fa34-4c14-a6fc-8093191ed006"
+    },
+    
+    {
+        "ref_number":"A09",
+        "size":"135",
+        "isOpticalLens": false,
+        "images":{
+            "frame":"1-15.png",
+            "lenses":"1-18.png",
+            "lleg":"1-17.png",
+            "rleg":"1-16.png",
+            "shadow":"1-19.png",
+            "preview":"1-15.png"
+        },
+        "settings":{
+            "transparency":"1",
+            "shadow":"1",
+            "temples":"-5.5",
+            "scale":"1"
+        },
+        "validate":true,
+        "envMap_id":"be530f5f-49ae-4862-8fde-9d7279921652",
+        "_id":"6fa9c829-fa34-4c14-a6fc-8093191ed006"
+    },
+    
+    {
+        "ref_number":"A10",
+        "size":"135",
+        "isOpticalLens": false,
+        "images":{
+            "frame":"1-51.png",
+            "lenses":"1-54-104.png",
+            "lleg":"1-53.png",
+            "rleg":"1-52.png",
+            "shadow":"1-55.png",
+            "preview":"1-51.png"
+        },
+        "settings":{
+            "transparency":"1",
+            "shadow":"1",
+            "temples":"-5.5",
+            "scale":"1"
+        },
+        "validate":true,
+        "envMap_id":"be530f5f-49ae-4862-8fde-9d7279921652",
+        "_id":"6fa9c829-fa34-4c14-a6fc-8093191ed006"
+    },
+    
+    {
+        "ref_number":"A11",
+        "size":"135",
+        "isOpticalLens": false,
+        "images":{
+            "frame":"1-100.png",
+            "lenses":"1-105.png",
+            "lleg":"1-102.png",
+            "rleg":"1-101.png",
+            "shadow":"1-103.png",
+            "preview":"1-100.png"
+        },
+        "settings":{
+            "transparency":"1",
+            "shadow":"1",
+            "temples":"-5.5",
+            "scale":"1"
+        },
+        "validate":true,
+        "envMap_id":"be530f5f-49ae-4862-8fde-9d7279921652",
+        "_id":"6fa9c829-fa34-4c14-a6fc-8093191ed006"
+    },
+    
+    {
+        "ref_number":"A12",
+        "size":"135",
+        "isOpticalLens": false,
+        "images":{
+            "frame":"1-46.png",
+            "lenses":"1-49.png",
+            "lleg":"1-48.png",
+            "rleg":"1-47.png",
+            "shadow":"1-50.png",
+            "preview":"1-46.png"
+        },
+        "settings":{
+            "transparency":"1",
+            "shadow":"1",
+            "temples":"-5.5",
+            "scale":"1"
+        },
+        "validate":true,
+        "envMap_id":"be530f5f-49ae-4862-8fde-9d7279921652",
+        "_id":"6fa9c829-fa34-4c14-a6fc-8093191ed006"
+    },
+    
+    {
+        "ref_number":"A13",
+        "size":"135",
+        "isOpticalLens": false,
+        "images":{
+            "frame":"1-25.png",
+            "lenses":"1-28.png",
+            "lleg":"1-27.png",
+            "rleg":"1-26.png",
+            "shadow":"1-29.png",
+            "preview":"1-25.png"
+        },
+        "settings":{
+            "transparency":"1",
+            "shadow":"1",
+            "temples":"-5.5",
+            "scale":"1"
+        },
+        "validate":true,
+        "envMap_id":"be530f5f-49ae-4862-8fde-9d7279921652",
+        "_id":"6fa9c829-fa34-4c14-a6fc-8093191ed006"
+    },
+    
+    {
+        "ref_number":"A14",
+        "size":"135",
+        "isOpticalLens": false,
+        "images":{
+            "frame":"1-46.png",
+            "lenses":"1-49.png",
+            "lleg":"1-48.png",
+            "rleg":"1-47.png",
+            "shadow":"1-50.png",
+            "preview":"1-25.png"
+        },
+        "settings":{
+            "transparency":"1",
+            "shadow":"1",
+            "temples":"-5.5",
+            "scale":"1"
+        },
+        "validate":true,
+        "envMap_id":"be530f5f-49ae-4862-8fde-9d7279921652",
+        "_id":"6fa9c829-fa34-4c14-a6fc-8093191ed006"
+    },
+    
+    {
+        "ref_number":"A15",
+        "size":"135",
+        "isOpticalLens": false,
+        "images":{
+            "frame":"1-41.png",
+            "lenses":"1-44.png",
+            "lleg":"1-43.png",
+            "rleg":"1-42.png",
+            "shadow":"1-45.png",
+            "preview":"1-25.png"
+        },
+        "settings":{
+            "transparency":"1",
+            "shadow":"1",
+            "temples":"-5.5",
+            "scale":"1"
+        },
+        "validate":true,
+        "envMap_id":"be530f5f-49ae-4862-8fde-9d7279921652",
+        "_id":"6fa9c829-fa34-4c14-a6fc-8093191ed006"
+    },
+    
+    {
+        "ref_number":"A16",
+        "size":"135",
+        "isOpticalLens": false,
+        "images":{
+            "frame":"1-80.png",
+            "lenses":"1-83.png",
+            "lleg":"1-82.png",
+            "rleg":"1-81.png",
+            "shadow":"1-84.png",
+            "preview":"1-80.png"
+        },
+        "settings":{
+            "transparency":"1",
+            "shadow":"1",
+            "temples":"-5.5",
+            "scale":"1"
+        },
+        "validate":true,
+        "envMap_id":"be530f5f-49ae-4862-8fde-9d7279921652",
+        "_id":"6fa9c829-fa34-4c14-a6fc-8093191ed006"
+    },
+    
+    {
+        "ref_number":"A17",
+        "size":"135",
+        "isOpticalLens": false,
+        "images":{
+            "frame":"1-56.png",
+            "lenses":"1-59.png",
+            "lleg":"1-58.png",
+            "rleg":"1-57.png",
+            "shadow":"1-60.png",
+            "preview":"1-56.png"
+        },
+        "settings":{
+            "transparency":"1",
+            "shadow":"1",
+            "temples":"-5.5",
+            "scale":"1"
+        },
+        "validate":true,
+        "envMap_id":"be530f5f-49ae-4862-8fde-9d7279921652",
+        "_id":"6fa9c829-fa34-4c14-a6fc-8093191ed006"
+    },
+    
+    {
+        "ref_number":"A18",
+        "size":"135",
+        "isOpticalLens": false,
+        "images":{
+            "frame":"1-85.png",
+            "lenses":"1-88.png",
+            "lleg":"1-87.png",
+            "rleg":"1-86.png",
+            "shadow":"1-89.png",
+            "preview":"1-85.png"
+        },
+        "settings":{
+            "transparency":"1",
+            "shadow":"1",
+            "temples":"-5.5",
+            "scale":"1"
+        },
+        "validate":true,
+        "envMap_id":"be530f5f-49ae-4862-8fde-9d7279921652",
+        "_id":"6fa9c829-fa34-4c14-a6fc-8093191ed006"
+    },
+    
+    {
+        "ref_number":"A19",
+        "size":"135",
+        "isOpticalLens": false,
+        "images":{
+            "frame":"1-76.png",
+            "lenses":"1-79.png",
+            "lleg":"1-78.png",
+            "rleg":"1-77.png",
+            "shadow":"1-80.png",
+            "preview":"1-76.png"
+        },
+        "settings":{
+            "transparency":"1",
+            "shadow":"1",
+            "temples":"-5.5",
+            "scale":"1"
+        },
+        "validate":true,
+        "envMap_id":"be530f5f-49ae-4862-8fde-9d7279921652",
+        "_id":"6fa9c829-fa34-4c14-a6fc-8093191ed006"
+    },
+    
+    {
+        "ref_number":"A20",
+        "size":"135",
+        "isOpticalLens": false,
+        "images":{
+            "frame":"1-56.png",
+            "lenses":"1-59.png",
+            "lleg":"1-58.png",
+            "rleg":"1-57.png",
+            "shadow":"1-60.png",
+            "preview":"1-56.png"
+        },
+        "settings":{
+            "transparency":"1",
+            "shadow":"1",
+            "temples":"-5.5",
+            "scale":"1"
+        },
+        "validate":true,
+        "envMap_id":"be530f5f-49ae-4862-8fde-9d7279921652",
+        "_id":"6fa9c829-fa34-4c14-a6fc-8093191ed006"
+    },
+    
+    {
+        "ref_number":"A21",
+        "size":"135",
+        "isOpticalLens": false,
+        "images":{
+            "frame":"1-10.png",
+            "lenses":"1-13.png",
+            "lleg":"1-12.png",
+            "rleg":"1-11.png",
+            "shadow":"1-14.png",
+            "preview":"1-10.png"
+        },
+        "settings":{
+            "transparency":"1",
+            "shadow":"1",
+            "temples":"-5.5",
+            "scale":"1"
+        },
+        "validate":true,
+        "envMap_id":"be530f5f-49ae-4862-8fde-9d7279921652",
+        "_id":"6fa9c829-fa34-4c14-a6fc-8093191ed006"
+    },
+    
+    {
+        "ref_number":"A22",
+        "size":"135",
+        "isOpticalLens": false,
+        "images":{
+            "frame":"1-70.png",
+            "lenses":"1-73.png",
+            "lleg":"1-72.png",
+            "rleg":"1-71.png",
+            "shadow":"1-74.png",
+            "preview":"1-70.png"
+        },
+        "settings":{
+            "transparency":"1",
+            "shadow":"1",
+            "temples":"-5.5",
+            "scale":"1"
+        },
+        "validate":true,
+        "envMap_id":"be530f5f-49ae-4862-8fde-9d7279921652",
+        "_id":"6fa9c829-fa34-4c14-a6fc-8093191ed006"
+    },
+    
+    {
+        "ref_number":"A23",
+        "size":"135",
+        "isOpticalLens": false,
+        "images":{
+            "frame":"1-121.png",
+            "lenses":"1-124.png",
+            "lleg":"1-123.png",
+            "rleg":"1-122.png",
+            "shadow":"1-125.png",
+            "preview":"1-121.png"
+        },
+        "settings":{
+            "transparency":"1",
+            "shadow":"1",
+            "temples":"-5.5",
+            "scale":"1"
+        },
+        "validate":true,
+        "envMap_id":"be530f5f-49ae-4862-8fde-9d7279921652",
+        "_id":"6fa9c829-fa34-4c14-a6fc-8093191ed006"
+    },
+    
+    {
+        "ref_number":"A24",
+        "size":"135",
+        "isOpticalLens": false,
+        "images":{
+            "frame":"1-126.png",
+            "lenses":"1-129.png",
+            "lleg":"1-128.png",
+            "rleg":"1-127.png",
+            "shadow":"1-130.png",
+            "preview":"1-126.png"
+        },
+        "settings":{
+            "transparency":"1",
+            "shadow":"1",
+            "temples":"-5.5",
+            "scale":"1"
+        },
+        "validate":true,
+        "envMap_id":"be530f5f-49ae-4862-8fde-9d7279921652",
+        "_id":"6fa9c829-fa34-4c14-a6fc-8093191ed006"
+    },
+    
+    {
+        "ref_number":"A25",
+        "size":"135",
+        "isOpticalLens": false,
+        "images":{
+            "frame":"1-06.png",
+            "lenses":"1-09.png",
+            "lleg":"1-08.png",
+            "rleg":"1-07.png",
+            "shadow":"1-34.png",
+            "preview":"1-06.png"
+        },
+        "settings":{
+            "transparency":"1",
+            "shadow":"1",
+            "temples":"-5.5",
+            "scale":"1"
+        },
+        "validate":true,
+        "envMap_id":"be530f5f-49ae-4862-8fde-9d7279921652",
+        "_id":"6fa9c829-fa34-4c14-a6fc-8093191ed006"
+    },
+    
+    {
+        "ref_number":"A26",
+        "size":"135",
+        "isOpticalLens": false,
+        "images":{
+            "frame":"1-30.png",
+            "lenses":"1-33.png",
+            "lleg":"1-32.png",
+            "rleg":"1-31.png",
+            "shadow":"1-34.png",
+            "preview":"1-30.png"
+        },
+        "settings":{
+            "transparency":"1",
+            "shadow":"1",
+            "temples":"-5.5",
+            "scale":"1"
+        },
+        "validate":true,
+        "envMap_id":"be530f5f-49ae-4862-8fde-9d7279921652",
+        "_id":"6fa9c829-fa34-4c14-a6fc-8093191ed006"
+    }
+    
+    
+]
+
+
+
+
+
+
+
+

@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+body {
+  font-family: 'Raleway', sans-serif; }
+
+header {
+  text-align: center;
+  width: 100%;
+  z-index: 100;
+  background-color: white; }
+  header img {
+    width: 220px;
+    margin-top: 10px; }
+
+section {
+  padding: 20px; }
+
+.cms_btn_group {
+  height: 40px;
+  margin: 20px 0px 0px 0px; }
+
+#manage_eyewear #add_eyewear, #manage_eyewear .dropdown {
+  margin-right: 5px;
+  float: left; }
+#manage_eyewear tr, #manage_eyewear th {
+  text-align: center; }
+  #manage_eyewear tr .component, #manage_eyewear th .component {
+    width: 13%; }
+    #manage_eyewear tr .component img, #manage_eyewear th .component img {
+      width: 70%;
+      padding: 10px 0px 10px 0px; }
+
+#manage_envMap #add_envMap, #manage_envMap #dw_envMap_data {
+  margin-right: 5px;
+  float: left; }
+#manage_envMap tr, #manage_envMap th {
+  text-align: center; }
+  #manage_envMap tr .env, #manage_envMap th .env {
+    width: 13%; }
+    #manage_envMap tr .env img, #manage_envMap th .env img {
+      width: 100%;
+      padding: 10px 0px 10px 0px; }
+
+.table > tbody > tr > td {
+  vertical-align: middle; }
+
+footer {
+  padding: 20px 0px;
+  text-align: center; }
+
+#add_eyewear_panel .row, #edit_eyewear_panel .row, #add_envMap_panel .row, #edit_envMap_panel .row {
+  margin: 10px;
+  vertical-align: middle; }
+  #add_eyewear_panel .row label, #edit_eyewear_panel .row label, #add_envMap_panel .row label, #edit_envMap_panel .row label {
+    display: inline-block; }
+#add_eyewear_panel form, #edit_eyewear_panel form, #add_envMap_panel form, #edit_envMap_panel form {
+  display: none; }
+#add_eyewear_panel label.file-name, #edit_eyewear_panel label.file-name, #add_envMap_panel label.file-name, #edit_envMap_panel label.file-name {
+  display: none;
+  font-weight: normal;
+  margin-left: 3px; }
+#add_eyewear_panel div.alert-danger, #edit_eyewear_panel div.alert-danger, #add_envMap_panel div.alert-danger, #edit_envMap_panel div.alert-danger {
+  display: none;
+  margin-bottom: 0px; }
+
+span.glyphicon-trash, span.glyphicon-edit {
+  cursor: pointer; }
+
+#logout {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px; }
+
+#navigator {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px 120px 20px 20px; }
+
+#cuall {
+  font-size:8pt;
+}
+
+span.percentmarkforinput {
+  color:#999;
+  position: absolute;
+  top: 5px;
+  right:50px;
+}
+
+/*# sourceMappingURL=cms.css.map */

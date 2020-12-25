@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+body {
+  font-family: 'Raleway', sans-serif; }
+
+#main {
+  width: 100vw;
+  text-align: center;
+  margin: 0 auto; }
+
+label {
+  font-weight: normal; }
+
+#header {
+  text-align: center; }
+  #header img {
+    width: 220px;
+    margin-top: 10px; }
+
+.glyphicon-menu-up, .glyphicon-menu-down {
+  font-size: 30px;
+  color: #6C6C6C;
+  transition: all 0.5s ease 0s;
+  cursor: pointer; }
+  .glyphicon-menu-up:hover, .glyphicon-menu-down:hover {
+    color: #ccc; }
+
+.glyphicon-menu-down {
+  margin-top: 5px; }
+
+#content_ori {
+  position: relative;
+  width: 480px;
+  height: 360px;
+  margin: 0 auto;
+  background-color: black; }
+  #content_ori #canvas_ori {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0; }
+  #content_ori #canvas3d_ori {
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* overlay the 2d canvas */
+    z-index: 1; }
+
+#content_com {
+  position: relative;
+  width: 480px;
+  height: 360px;
+  margin: 0 auto;
+  background-color: black; }
+  #content_com #canvas_com {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0; }
+  #content_com #canvas3d_com {
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* overlay the 2d canvas */
+    z-index: 1; }
+  #content_com #flashVideo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1; }
+
+input[type=range] {
+  -webkit-appearance: none;
+  display: inline; }
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 300px;
+  height: 2px;
+  background: #ddd;
+  border: none;
+  cursor: pointer; }
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: #6C6C6C;
+  margin-top: -4px;
+  cursor: pointer; }
+
+input[type=range]:focus {
+  outline: none; }
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #ccc; }
+
+.carousel-control.left, .carousel-control.right {
+  background-image: none; }
+
+#glasses-selection {
+  width: 70vw;
+  margin: 0 auto; }
+  #glasses-selection .carousel-control {
+    width: 5%;
+    color: #23b2a0;
+    text-shadow: none;
+    transition: all 0.5s ease 0s; }
+  #glasses-selection .carousel-inner {
+    width: 90%;
+    margin: 0 auto; }
+  #glasses-selection .item div {
+    padding: 0px; }
+  #glasses-selection img {
+    padding: 20px;
+    width: 100%; }
+  #glasses-selection img:hover {
+    cursor: pointer; }
+  #glasses-selection img:hover, #glasses-selection img.active {
+    padding: 10px;
+    border-bottom: 2px solid rgba(35, 178, 160, 0.7); }
+
+footer {
+  padding: 30px 0px 20px 0px;
+  text-align: center; }
+
+#logout {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px; }
+
+#navigator {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px 120px 20px 20px; }
+
+/*# sourceMappingURL=comparison.css.map */

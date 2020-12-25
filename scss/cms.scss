@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+$canvas_width: 480px;
+$canvas_height: 360px;
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+header{
+	text-align: center;
+    width: 100%; 
+    z-index: 100;
+    background-color: white;
+
+	img{
+		width: 220px;
+		margin-top: 10px;
+	}
+}
+
+section {
+	padding: 20px;
+}
+
+.cms_btn_group {
+	height: 40px;
+	margin: 20px 0px 0px 0px;
+}
+
+#manage_eyewear{
+
+	#add_eyewear, .dropdown{
+		margin-right: 5px;
+		float: left;
+	}
+
+	tr, th {
+		text-align: center;
+
+		.component{
+			width: 13%;
+
+			img{
+				width: 70%;
+				padding: 10px 0px 10px 0px;
+			}
+		}
+	}
+}
+
+
+#manage_envMap{
+
+	#add_envMap, #dw_envMap_data{
+		margin-right: 5px;
+		float: left;
+	}
+
+	tr, th {
+		text-align: center;
+
+		.env {
+			width: 13%;
+			img{
+				width: 100%;
+				padding: 10px 0px 10px 0px;
+			}
+		}
+
+	}
+}
+
+.table {
+	>tbody {
+		>tr {
+			>td {
+				vertical-align: middle;
+			}
+		}
+	}
+}
+
+footer{
+	padding: 20px 0px;
+	text-align: center;
+}
+
+#add_eyewear_panel, #edit_eyewear_panel, #add_envMap_panel, #edit_envMap_panel {
+	.row{
+		margin: 10px;
+		vertical-align: middle;
+		label{
+			display: inline-block;
+		}
+	}
+	form{
+		display: none;
+	}
+	label.file-name{
+		display: none;
+		font-weight: normal;
+		margin-left: 3px;
+	}
+	div.alert-danger{
+		display: none;
+		margin-bottom: 0px;
+	}
+}
+
+span.glyphicon-trash, span.glyphicon-edit {
+	cursor: pointer;
+}
+
+#logout {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 20px;
+}
+
+#navigator {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 20px 120px 20px 20px;
+}

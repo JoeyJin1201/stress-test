@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="css/libs/bootstrap.min.css">
+	<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r17/Stats.min.js"
+		integrity="sha512-mfOs9z5Hk96xJH71l0ptzjgGvflNJRnHA7brsEwqDZf7mJa8QDfUtcHICKMXq4Ys80g5HKQMD9rsY3R44ZlEug=="
+		crossorigin="anonymous"></script>
+	<!-- Import the component -->
+	<script type="text/javascript" src="js/key.js"></script>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+    crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Import the component -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+	<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+	
+	<title>YajanTech Glasses Try On</title>
+</head>
+
+<body>
+	<div id="main">
+
+		<ul class="items-wrap center-center">
+			<li>
+				<model-viewer src="./models/Glasses.glb" alt="Glasses.glb" auto-rotate camera-controls>
+				</model-viewer>
+				<p style="text-align: center;">Glasses.glb</p>
+			</li>
+			<li>
+				<model-viewer src="./models/Horse.glb" alt="Horse.glb" auto-rotate camera-controls>
+				</model-viewer>
+			</li>
+			<li>
+				<model-viewer src="./models/Astronaut.glb" alt="Astronaut.glb" auto-rotate camera-controls>
+				</model-viewer>
+			</li>
+			<li>
+				<model-viewer src="./models/test-plum-gltf/scene.gltf" alt="scene.gltf" auto-rotate camera-controls>
+				</model-viewer>
+			</li>
+		</ul>
+
+		<div hidden id="header">
+			<img src="images/material/bg_header.PNG">
+		</div>
+		<div id="sidebar-left">
+			<div id="src-opt" hidden>
+				<a id="photo">
+					<img src="images/material/btn_L_cphoto.png">
+					<form><input type="file" name="uploads[]" accept="image/*"></form>
+				</a>
+				<a id="video">
+					<img src="images/material/btn_L_cvideo.png">
+					<form><input type="file" name="uploads[]" accept="video/mp4,video/quicktime,video/*"></form>
+				</a>
+				<a id="livecam">
+					<img src="images/material/btn_L_live.png">
+				</a>
+			</div>
+		</div>
+		<div id="content">
+			<video loop id="webcam" style="display:none" playsinline autoplay muted></video>
+			<div id='flashVideo'></div>
+			<canvas id="canvas" width="640" height="480" style='visibility: hidden'></canvas>
+			<canvas id="canvas3d" width="640" height="480" style='visibility: hidden'></canvas>
+			<canvas id="canvasSave" width="640" height="480" style="display:none"></canvas>
+
+			<div id="control-panel">
+				<input id="showHideVTO" type="checkbox" name="showHideVTO" checked> Show Eyewear &nbsp
+				<input id="isMirror" type="checkbox" name="isMirror"> Mirror
+				<button id="stop" class="btn btn-default" value="pause">
+					<span class="glyphicon glyphicon-pause" aria-hidden="true"></span> Pause
+				</button>
+				<button id="saveSettings" class="btn btn-default">
+					<span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Save Settings
+				</button>
+				<button id="download" class="btn btn-default">
+					<span class="glyphicon glyphicon-camera" aria-hidden="true"></span> Snapshot
+				</button>
+				<button id="pdCalculate" class="btn btn-default">
+					<span class="glyphicon glyphicon" aria-hidden="true"></span>START PD
+				</button>
+			</div>
+		</div>
+		<div id="sidebar-right">
+			<table hidden id="sliderTable" width="100%" height="100%">
+				<tr background="images/material/bg_R_lens.png">
+					<td>
+						<input id="glassesTransparencySlider" type="range" oninput="setGlassesTransparency(this.value)"
+							onchange="setGlassesTransparency(this.value)" value="0.5" step="0.001" max="1.0" min="0.0"></input>
+					</td>
+				</tr>
+				<tr background="images/material/bg_R_shadow.png">
+					<td>
+						<input id="frontShadowTransparencySlider" type="range" oninput="setFrontShadowTransparency(this.value)"
+							onchange="setFrontShadowTransparency(this.value)" value="1.0" step="0.001" max="1.0" min="0.0"></input>
+					</td>
+				</tr>
+				<tr background="images/material/bg_R_temples.png">
+					<td>
+						<input id="glassesTemplesSlider" type="range" oninput="setGlassesTemples(this.value)"
+							onchange="setGlassesTemples(this.value)" value="0.0" step="0.5" max="20" min="-20"></input>
+					</td>
+				</tr>
+				<tr background="images/material/bg_R_scale.png">
+					<td>
+						<input id="glassesScaleSlider" type="range" oninput="setGlassesScale(this.value)"
+							onchange="setGlassesScale(this.value)" value="1.0" step="0.001" max="1.2" min="0.8"></input>
+						<br>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<div id="content_underside"><br>
+			<iframe id="existing-iframe-example" width="560" height="315"
+				src="https://www.youtube.com/embed/z-TytDFQQ1s?enablejsapi=1&playsinline=1" frameborder="0"
+				style="border: solid 10px #37474F"></iframe>
+			<div id="glasses-selection" class="carousel slide" data-ride="carousel" data-interval="false">
+				<div class="carousel-inner" role="listbox">
+				</div>
+				<a class="left carousel-control" href="#glasses-selection" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#glasses-selection" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+		<footer style="display: block;bottom: 0px;">Copyright &copy; 2020 YajanTech Co.Ltd. All Rights Reserved</footer>
+	</div>
+
+	<script src="./build/stats.min.js"></script>
+	<script>
+		var stats = new Stats();
+		stats.showPanel(1); // 0: fps, 1: ms, 2: mb, 3+: custom
+		document.body.appendChild(stats.dom);
+
+		function animate() {
+
+			stats.begin();
+
+			// monitored code goes here
+
+			stats.end();
+
+			requestAnimationFrame(animate);
+
+		}
+
+		requestAnimationFrame(animate);
+	</script>
+
+	<!-- for youtube iframe start -->
+	<script type="text/javascript">
+		var tag = document.createElement('script');
+		tag.id = 'iframe-demo';
+		tag.src = 'https://www.youtube.com/iframe_api';
+		var firstScriptTag = document.getElementsByTagName('script')[0];
+		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+		var player;
+		function onYouTubeIframeAPIReady() {
+			player = new YT.Player('existing-iframe-example', {
+				events: {
+					'onReady': onPlayerReady,
+					'onStateChange': onPlayerStateChange
+				}
+			});
+		}
+		function onPlayerReady(event) {
+			document.getElementById('existing-iframe-example').style.borderColor = '#FF6D00';
+		}
+		function changeBorderColor(playerStatus) {
+			var color;
+			if (playerStatus == -1) {
+				color = "#37474F"; // unstarted = gray
+			} else if (playerStatus == 0) {
+				color = "#FFFF00"; // ended = yellow
+			} else if (playerStatus == 1) {
+				color = "#33691E"; // playing = green
+			} else if (playerStatus == 2) {
+				color = "#DD2C00"; // paused = red
+			} else if (playerStatus == 3) {
+				color = "#AA00FF"; // buffering = purple
+			} else if (playerStatus == 5) {
+				color = "#FF6DOO"; // video cued = orange
+			}
+			if (color) {
+				document.getElementById('existing-iframe-example').style.borderColor = color;
+			}
+		}
+		function onPlayerStateChange(event) {
+			changeBorderColor(event.data);
+		}
+	</script>
+	<!-- for youtube iframe end -->
+
+	<script type="text/javascript" src="js/chk.js"></script>
+	<script type="text/javascript" src="js/utilities.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/libs/swfobject.js"></script>
+	<script type="text/javascript" src="js/libs/webgl-obj-loader.js"></script>
+	<script type="text/javascript" src="js/libs/GLjs/glMatrix-0.9.5.min.js"></script>
+	<script type="text/javascript" src="js/libs/debug/webgl-debug.js"></script>
+	<script type="text/javascript" src="js/compatibility.js"></script>
+	<script type="text/javascript" src="js/video.js"></script>
+	<script type='text/javascript' src="js/videoFlash.js"></script>
+	<script type="text/javascript" src="js/ULSTracker.js"></script>
+	<script type="text/javascript" src="js/shaders/TextureShaders.js"></script>
+	<script type="text/javascript" src="js/vtoRender.js"></script>
+	<script type="text/javascript" src="js/libs/html2canvas.js"></script>
+</body>
+
+</html>
